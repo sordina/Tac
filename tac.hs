@@ -1,7 +1,11 @@
 {--
  - This serves as an implementation of the tac system command.
  - It is immaterial weather interact waits for full input, or
- - processes a line at a time as reverse need all lines anyway.
+ - processes a line at a time as reverse needs all lines anyway.
+ - 
+ - On seccond thought, this isn't entirely true.
+ - Memory usage and processing can be reduced by processing each
+ - line as it is recieved.
 --}
 
 import System.Environment (getArgs)
